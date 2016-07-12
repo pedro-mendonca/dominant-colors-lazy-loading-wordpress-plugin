@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: Dominant Colors Lazy Loading 0.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dominant-colors-"
 "lazy-loading\n"
-"POT-Creation-Date: 2016-05-10 18:41+0100\n"
-"PO-Revision-Date: 2016-05-10 18:41+0100\n"
+"POT-Creation-Date: 2016-07-12 12:24+0100\n"
+"PO-Revision-Date: 2016-07-12 12:37+0100\n"
 "Last-Translator: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language-Team: Pedro Mendonça <ped.gaspar@gmail.com>\n"
 "Language: pt_PT\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
@@ -74,37 +74,58 @@ msgstr "Definições do Dominant Colors Lazy Loading"
 msgid "Dominant Colors Lazy Loading"
 msgstr "Dominant Colors Lazy Loading"
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:220
+#: admin/class-dominant-colors-lazy-loading-admin.php:227
 #: admin/partials/dominant-colors-lazy-loading-admin-header.php:19
 msgid "Placeholders"
 msgstr "Placeholders"
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:227
+#: admin/class-dominant-colors-lazy-loading-admin.php:234
 msgid "Format"
 msgstr "Formato"
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:236
+#: admin/class-dominant-colors-lazy-loading-admin.php:243
 msgid "Fallback"
 msgstr "Por omissão"
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:252
+#: admin/class-dominant-colors-lazy-loading-admin.php:259
 msgid ""
 "If you want to preserve the aspect ratio of responsive images enable SVG "
 "placeholders.<br>If you care about transferred bytes, browser compatibility "
-"or preserve the aspect ratio yourself use GIF placeholders."
+"or preserve the aspect ratio yourself use GIF placeholders.<br>If you want "
+"to use tiny thumbnails you also have to use GIF placeholders."
 msgstr ""
 "Se quiser preservar as proporções de imagens responsivas, active os "
-"<em>placeholders</em> SVG.<br>Se garantir as proporções das imagens e a sua "
-"prioridade for minimizar os bytes transferidos e compatibilidade com "
-"navegadores, utilize os <em>placeholders</em> GIF."
+"<em>placeholders</em> SVG.<br>Para garantir as proporções das imagens e se a "
+"sua prioridade for minimizar os bytes transferidos e compatibilidade com "
+"navegadores, utilize os <em>placeholders</em> GIF.<br>Se quiser usar "
+"minaturas muito pequenas também terá que usar os <em>placeholders</em> GIF."
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:265
-msgid "SVG (More bytes, preserves image aspect ratio)"
-msgstr "SVG (mais bytes, preserva as proporções da imagem)"
+#: admin/class-dominant-colors-lazy-loading-admin.php:272
+msgid "<strong>SVG</strong> (More bytes, preserves image aspect ratio)"
+msgstr "<strong>SVG</strong> (mais bytes, preserva as proporções da imagem)"
 
-#: admin/class-dominant-colors-lazy-loading-admin.php:271
-msgid "GIF (Less bytes, compatible with ancient browsers)"
-msgstr "GIF (menos bytes, compatível com navegadores mais antigos)"
+#: admin/class-dominant-colors-lazy-loading-admin.php:278
+msgid "<strong>GIF</strong> (Less bytes, compatible with ancient browsers)"
+msgstr ""
+"<strong>GIF</strong> (menos bytes, compatível com navegadores mais antigos)"
+
+#: admin/class-dominant-colors-lazy-loading-admin.php:284
+msgid "<strong>GIF with 3×3 pixels</strong> (Tiny thumbnail with 120 bytes)"
+msgstr ""
+"<strong>GIF com 3× 3 píxeis</strong> (Miniaturas muito pequenas com 120 "
+"bytes)"
+
+#: admin/class-dominant-colors-lazy-loading-admin.php:290
+msgid "<strong>GIF with 4×4 pixels</strong> (Tiny thumbnail with 128 bytes)"
+msgstr ""
+"<strong>GIF com 4× 4 píxeis</strong> (Miniaturas muito pequenas com 128 "
+"bytes)"
+
+#: admin/class-dominant-colors-lazy-loading-admin.php:296
+msgid "<strong>GIF with 5×5 pixels</strong> (Tiny thumbnail with 204 bytes)"
+msgstr ""
+"<strong>GIF com 4× 4 píxeis</strong> (Miniaturas muito pequenas com 204 "
+"bytes)"
 
 #: admin/partials/dominant-colors-lazy-loading-admin-calculation.php:3
 #: admin/partials/dominant-colors-lazy-loading-admin-header.php:26
@@ -113,10 +134,13 @@ msgstr "Cálculo"
 
 #: admin/partials/dominant-colors-lazy-loading-admin-calculation.php:8
 #, php-format
-msgid "%s image currently has no dominant color assigned."
-msgid_plural "%s images currently have no dominant color assigned."
-msgstr[0] "%s imagem sem cor dominante atribuída."
-msgstr[1] "%s imagens sem cor dominante atribuída."
+msgid "%s image has no dominant color assigned or is missing tiny thumbnails."
+msgid_plural ""
+"%s images have no dominant color assigned or are missing tiny thumbnails."
+msgstr[0] ""
+"%s imagem sem cor dominante atribuída ou sem miniaturas muito pequenas."
+msgstr[1] ""
+"%s imagens sem cor dominante atribuída ou sem miniaturas muito pequenas."
 
 #: admin/partials/dominant-colors-lazy-loading-admin-calculation.php:10
 msgid "Do you want to calculate now?"
@@ -150,3 +174,24 @@ msgstr "Manuel Wieser"
 #. Author URI of the plugin/theme
 msgid "https://manu.ninja/"
 msgstr "https://manu.ninja/"
+
+#~ msgid ""
+#~ "If you want to preserve the aspect ratio of responsive images enable SVG "
+#~ "placeholders.<br>If you care about transferred bytes, browser "
+#~ "compatibility or preserve the aspect ratio yourself use GIF placeholders."
+#~ msgstr ""
+#~ "Se quiser preservar as proporções de imagens responsivas, active os "
+#~ "<em>placeholders</em> SVG.<br>Se garantir as proporções das imagens e a "
+#~ "sua prioridade for minimizar os bytes transferidos e compatibilidade com "
+#~ "navegadores, utilize os <em>placeholders</em> GIF."
+
+#~ msgid "SVG (More bytes, preserves image aspect ratio)"
+#~ msgstr "SVG (mais bytes, preserva as proporções da imagem)"
+
+#~ msgid "GIF (Less bytes, compatible with ancient browsers)"
+#~ msgstr "GIF (menos bytes, compatível com navegadores mais antigos)"
+
+#~ msgid "%s image currently has no dominant color assigned."
+#~ msgid_plural "%s images currently have no dominant color assigned."
+#~ msgstr[0] "%s imagem sem cor dominante atribuída."
+#~ msgstr[1] "%s imagens sem cor dominante atribuída."
